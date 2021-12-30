@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+header,
+footer {
+  background-color: #1f2937;
+  display: flex;
+  color: white;
+}
+
+/* 1. Upper-Header */
+header {
+  flex-direction: column;
+  /* gap: 40px; */
+}
+
+.header-top {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+  color: #f9faf8;
+}
+
+.header-top img {
+  width: 100px;
+  height: 40px;
+  border-radius: 16px;
+  margin-left: 0;
+}
+
+.header-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #f9faf8;
+  font-size: 18px;
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(184, 178, 178);
+  font-style: italic;
+}
+
+/* 2. Lower-Header */
+.header-bottom {
+  display: flex;
+  padding: 48px;
+  gap: 16px;
+  justify-content: center;
+}
+
+.header-main-text {
+  font-size: 48px;
+  display: block;
+  font-weight: 900;
+  color: #f9faf8;
+  overflow-wrap: break-word;
+  display: inline-block;
+}
+
+.header-info {
+  width: 400px;
+}
+
+.btn-sm {
+  margin-top: 16px;
+  width: 100px;
+}
+
+.header-bottom img {
+  width: 550px;
+  background-color: grey;
+  margin-right: 12px;
+  margin-top: 24px;
+}
+
+/* 3. Some random information */
+main {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.info {
+  text-align: center;
+  margin: 24px 0;
+  font-size: 36px;
+  font-weight: 900;
+  color: #1f2937;
+}
+
+.image-tiles {
+  display: flex;
+  justify-content: center;
+}
+
+.tile {
+  width: 200px;
+  height: 230px;
+  text-align: center;
+}
+
+.tile img {
+  border: 2px solid rgb(11, 116, 253);
+  border-radius: 10px;
+  width: 180px;
+  height: 180px;
+}
+
+.tile p {
+  padding: 0 12px;
+}
+
+/* 4. Inspiring Quote */
+.part-2 {
+  background-color: #e5e7eb;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.part-2 > p:first-child {
+  font-size: 32px;
+  font-weight: lighter;
+  color: #1f2937;
+  font-style: italic;
+  width: 760px;
+  margin: 20px 0;
+}
+
+.part-2 > p:nth-child(2) {
+  margin-left: 600px;
+  font-weight: bold;
+}
+
+/* 5. Call to action! */
+.outer {
+  padding: 0 120px;
+}
+
+.part-3 {
+  background-color: #3882f6;
+  border-radius: 8px;
+  height: 100px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.part-3 p {
+  margin: 0;
+  padding: 0;
+  color: #e5e7eb;
+}
+
+.text > p:first-child {
+  font-weight: bold;
+}
+
+.btn-sm {
+  border: 0.5px solid #e5e7eb;
+  border-radius: 6px;
+}
+
+/* 6. Footer */
+footer {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
